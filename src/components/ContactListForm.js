@@ -1,12 +1,13 @@
 import React from "react";
+import styles from "./styles.module.scss";
 
-const ContactList = ({ contactArray }) => {
+const ContactListForm = ({ contactArray }) => {
   return (
     <div>
       {contactArray.length !== 0 && (
         <ul>
           {contactArray.map((item) => (
-            <li key={item.id}>
+            <li className={styles.list} key={item.id}>
               {item.name}: {item.number}
             </li>
           ))}
@@ -16,4 +17,4 @@ const ContactList = ({ contactArray }) => {
   );
 };
 
-export default ContactList;
+export default ContactListForm;

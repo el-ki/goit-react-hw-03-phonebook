@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(160, 159, 159);
+  box-shadow: rgb(179, 176, 176);
+  width: 30%;
+}
+
+.btn {
+  outline: none;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid;
+  box-shadow: rgb(179, 176, 176);
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(48, 47, 47);
+  text-shadow: 0 1px #fff;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.label {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 5px;
+}
+
+.input {
+  margin-top: 5px;
+  height: 20px;
+  border-radius: 0.2rem;
+  border-color: rgb(160, 159, 159);
+}
+
+.list {
+  list-style-type: decimal;
+}

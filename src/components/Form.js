@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { v4 as uuidv4 } from "uuid";
+import styles from "./styles.module.scss";
 
 class Form extends Component {
   state = {
@@ -24,10 +25,11 @@ class Form extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleOnSubmit}>
-        <label>
+      <form className={styles.form} onSubmit={this.handleOnSubmit}>
+        <label className={styles.label}>
           Name
           <input
+            className={styles.input}
             type="text"
             value={this.state.name}
             onChange={this.handleInputChange}
@@ -37,9 +39,10 @@ class Form extends Component {
             required
           />
         </label>
-        <label>
+        <label className={styles.label}>
           Number
           <input
+            className={styles.input}
             type="tel"
             value={this.state.number}
             onChange={this.handleInputChange}
@@ -49,7 +52,9 @@ class Form extends Component {
             required
           />
         </label>
-        <button type="submit">Add contact</button>
+        <button className={styles.btn} type="submit">
+          Add contact
+        </button>
       </form>
     );
   }
